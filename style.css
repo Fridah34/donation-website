@@ -202,6 +202,7 @@ container
 .policies {
   background-color: #f4f4f4;
   padding: 40px 0;
+}
 .mission-area{
     margin-top: 120px; 
 
@@ -242,6 +243,7 @@ container
 .finder-content {
   position: relative;
   z-index: 1;
+}
 .banner {
     position: relative;
     width: 100%;
@@ -465,6 +467,7 @@ button:hover {
         padding-right: 0;
         margin-bottom: 20px;
     }
+}
 .event-container {
     display: flex;
     justify-content: center;
@@ -527,5 +530,5 @@ button:hover {
 }
 
 .spacer {
-    height: 200px; /* Adjust for more space */
+    height: 200px; 
 }
