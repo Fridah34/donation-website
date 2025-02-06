@@ -325,25 +325,43 @@ p {
 }
 
 .events {
-  height: 100vh;
+  height: max-content;
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
+  background-color: #D0D1EE;
+  padding-bottom: 30px;
 }
 
 .events h1 {
+  padding-top: 50px;
   text-transform: uppercase;
   text-align: center;
+  font-size: 50px;
+  color: #9e0059;
 }
 
 .events .pic-cards {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   align-content: center;
   justify-content: center;
 }
 
+.card{
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.4);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.7);
+}
+
+.card img{
+  padding: 2px;
+}
 .newz {
   height: 150vh;
 }
