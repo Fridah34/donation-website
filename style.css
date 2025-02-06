@@ -358,7 +358,8 @@ p {
 }
 
 .newz {
-  height: 150vh;
+  height: max-content;
+  padding-bottom: 60px;
 }
 
 .newz h1 {
@@ -375,9 +376,19 @@ p {
   padding-right: 20px;
 }
 
+.cardz .card-header{
+  display: flex;
+  gap: 20px;
+}
+
+.cardz .card{
+  border-radius: 1px;
+}
+
 .card-footer {
   display: flex;
   gap: 90px;
+  overflow: hidden;
 }
 
 .cardz .card {
