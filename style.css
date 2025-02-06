@@ -343,17 +343,17 @@ p {
   justify-content: center;
 }
 
-.card {
+.events .pic-cards .card{
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.4);
   transition: all 0.4s ease;
 }
 
-.card:hover {
+.events .pic-cards .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.7);
   transform: translateY(-10px);
 }
 
-.card img {
+.events .pic-cards .card img {
   padding: 2px;
 }
 .newz {
