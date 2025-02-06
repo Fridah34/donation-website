@@ -330,7 +330,7 @@ p {
   margin: 0 auto;
   background-color: #000;
   content: "";
-  width: 34%;
+  width: 30%;
   height: 4px;
   display: block;
 }
@@ -345,7 +345,7 @@ p {
 
 .events .pic-cards .card{
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.4);
-  transition: all 0.4s ease;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .events .pic-cards .card:hover {
@@ -356,6 +356,7 @@ p {
 .events .pic-cards .card img {
   padding: 2px;
 }
+
 .newz {
   height: 150vh;
 }

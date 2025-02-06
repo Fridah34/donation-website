@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Events</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -59,10 +60,10 @@
     </header>
     <section class="events">
       <div>
-        <h1>upcoming events</h1>
+        <h1 class="tagline">upcoming events</h1>
       </div>
       <div class="pic-cards">
-        <div class="card" style="width: 18rem; background-color: #FF6699;">
+        <div class="card" style="width: 18rem; background-color: #ff6699">
           <img src="/Images/children.jpeg" class="card-img-top" alt="..." />
           <div class="card-body">
             <h5 class="card-title">Meal Packaging & Delivery</h5>
@@ -73,12 +74,18 @@
             <a
               href="#"
               class="btn btn-primary"
-              style="background-color: #ffbd00; border: none"
+              style="
+                background-color: #ffbd00;
+                color: white;
+                padding: 10px 20px;
+                border-radius: 5px;
+                border: none;
+              "
               >Lets Go</a
             >
           </div>
         </div>
-        <div class="card" style="width: 18rem; background-color: #FF6699;">
+        <div class="card" style="width: 18rem; background-color: #ff6699">
           <img src="/Images/children.jpeg" class="card-img-top" alt="..." />
           <div class="card-body">
             <h5 class="card-title">ThanksGiving Soup Kitchen</h5>
@@ -89,12 +96,18 @@
             <a
               href="#"
               class="btn btn-primary"
-              style="background-color: #ffbd00; border: none"
+              style="
+                background-color: #ffbd00;
+                color: white;
+                padding: 10px 20px;
+                border-radius: 5px;
+                border: none;
+              "
               >Donate</a
             >
           </div>
         </div>
-        <div class="card" style="width: 18rem; background-color: #FF6699;">
+        <div class="card" style="width: 18rem; background-color: #ff6699">
           <img src="/Images/children.jpeg" class="card-img-top" alt="..." />
           <div class="card-body">
             <h5 class="card-title">Visiting Childrens Home</h5>
@@ -105,7 +118,13 @@
             <a
               href="#"
               class="btn btn-primary"
-              style="background-color: #ffbd00; border: none"
+              style="
+                background-color: #ffbd00;
+                color: white;
+                padding: 10px 20px;
+                border-radius: 5px;
+                border: none;
+              "
               >Donate</a
             >
           </div>
@@ -184,9 +203,21 @@
             alt="WhatsApp"
           />
         </a>
-      
       </div>
       <p>&copy; 2025 Donatia. All Rights Reserved.</p>
     </footer>
+
+    <script>
+      ScrollReveal({
+        origin: "left",
+        reset: true,
+        distance: "60px",
+        duration: 1500,
+        delay: 400,
+      });
+
+      ScrollReveal().reveal(".tagline", {});
+      ScrollReveal().reveal(".card", { delay: 500, origin: "bottom" });
+    </script>
   </body>
 </html>
