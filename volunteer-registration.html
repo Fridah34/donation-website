@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <a class = "navbar-brand" href="main.page.html">DONATIA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class=""nav-item><a class="nav-link" href="main.page.html">Home</a></li>
+                        <li class=""nav-item><a class="nav-link" href="recognizeus.html">Recognize Us</a></li>
+                        <li class=""nav-item><a class="nav-link" href="Support.html">Support</a></li>
+                        <li class=""nav-item><a class="nav-link" href="events.html">Events</a></li>
+                        <li class=""nav-item><a class="nav-link" href="news.html">News</a></li>
+                        <li class=""nav-item><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                    <a class="donate-btn" href="support.html">DONATE</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="registration-section">
+        <h2>Volunteer Registration Form</h2>
+        <form action="submit-form.php" method="post" class="registration-form">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="availability">Availability:</label>
+            <textarea id="availability" name="availability" placeholder="E.g., Weekends, Weekdays, Specific Dates" required></textarea>
+
+            <label for="interests">Areas of Interest:</label>
+            <select id="interests" name="interests[]" multiple required>
+                <option value="community-outreach">Community Outreach</option>
+                <option value="event-planning">Event Planning</option>
+                <option value="fundraising">Fundraising</option>
+                <option value="administrative-tasks">Administrative Tasks</option>
+                <option value="logistics">Volunteering</option>
+            </select>
+
+            <label for="skills">Relevant Skills or Certifications:</label>
+            <textarea id="skills" name="skills" placeholder="E.g., First Aid Certification, Project Management" required></textarea>
+
+            <label for="experience">Previous Volunteer Experience:</label>
+            <textarea id="experience" name="experience" placeholder="Please describe any prior volunteer roles" required></textarea>
+
+            <label for="motivation">Why do you want to volunteer with us?</label>
+            <textarea id="motivation" name="motivation" required></textarea>
+
+            <label for="emergency-contact">Emergency Contact Name:</label>
+            <input type="text" id="emergency-contact" name="emergency-contact" required>
+
+            <label for="emergency-phone">Emergency Contact Phone:</label>
+            <input type="tel" id="emergency-phone" name="emergency-phone" required>
+
+            <label for="referral">How did you hear about us?</label>
+            <input type="text" id="referral" name="referral">
+
+            <button type="submit" class="submit-button">Submit Application</button>
+        </form>
+    </section>
+    <section class="policies">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h3>CONTACT US</h3>
+                    <p>Caxton House, Koinange Street<br>Nairobi<br>donatia@gmail.com</p>
+                </div>
+                <div class="col-md-3">
+                    <h3>CONNECT WITH US</h3>
+                    <p><a href="#">Facebook</a></p>
+                    <p><a href="#">Instagram</a></p>
+                    <p><a href="#">Twitter</a></p>
+                </div>
+                <div class="col-md-3">
+                    <h3>POLICIES</h3>
+                    <p><a href="#">Terms & Conditions</a></p>
+                    <p><a href="#">Privacy Policy</a></p>
+                    <p><a href="#">Accessibility Statement</a></p>
+                </div>
+                <div class="col-md-3">
+                    <h3>SUBSCRIBE</h3>
+                    <input type="email" class="form-control" placeholder="Email">
+                    <div class="form-check mt-2">
+                        <input type="checkbox" class="form-check-input" id="newsletter">
+                        <label class="form-check-label" for="newsletter">Yes, subscribe me to your news announcement.</label>
+                    </div>
+                    <button class="btn btn-dark mt-2">Join</button>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+    
+    
+    
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="https://twitter.com/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968830.png" alt="Twitter (X)" class="icon">
+            </a>
+            <a href="https://facebook.com" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" class="icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" class="icon">
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" alt="LinkedIn" class="icon">
+            </a>
+            <a href="https://wa.me" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968841.png" alt="WhatsApp">
+            </a>
+            
+        </div>
+        <p>&copy; 2025 Donatia. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Events</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -33,7 +34,9 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-              <li class="" nav-item><a class="nav-link" href="main.page.html">Home</a></li>
+              <li class="" nav-item>
+                <a class="nav-link" href="main.page.html">Home</a>
+              </li>
               <li class="" nav-item>
                 <a class="nav-link" href="recognizeus.html">Recognize Us</a>
               </li>
@@ -57,10 +60,10 @@
     </header>
     <section class="events">
       <div>
-        <h1>upcoming event</h1>
+        <h1 class="tagline">upcoming events</h1>
       </div>
       <div class="pic-cards">
-        <div class="card" style="width: 18rem">
+        <div class="card" style="width: 18rem; background-color: #ff6699">
           <img src="/Images/children.jpeg" class="card-img-top" alt="..." />
           <div class="card-body">
             <h5 class="card-title">Meal Packaging & Delivery</h5>
@@ -68,10 +71,21 @@
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
             </p>
-            <a href="#" class="btn btn-primary">Lets Go</a>
+            <a
+              href="#"
+              class="btn btn-primary"
+              style="
+                background-color: #ffbd00;
+                color: white;
+                padding: 10px 20px;
+                border-radius: 5px;
+                border: none;
+              "
+              >Lets Go</a
+            >
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card" style="width: 18rem; background-color: #ff6699">
           <img src="/Images/children.jpeg" class="card-img-top" alt="..." />
           <div class="card-body">
             <h5 class="card-title">ThanksGiving Soup Kitchen</h5>
@@ -79,10 +93,21 @@
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
             </p>
-            <a href="#" class="btn btn-primary">Donate</a>
+            <a
+              href="#"
+              class="btn btn-primary"
+              style="
+                background-color: #ffbd00;
+                color: white;
+                padding: 10px 20px;
+                border-radius: 5px;
+                border: none;
+              "
+              >Donate</a
+            >
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card" style="width: 18rem; background-color: #ff6699">
           <img src="/Images/children.jpeg" class="card-img-top" alt="..." />
           <div class="card-body">
             <h5 class="card-title">Visiting Childrens Home</h5>
@@ -90,7 +115,18 @@
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
             </p>
-            <a href="#" class="btn btn-primary">Donate</a>
+            <a
+              href="#"
+              class="btn btn-primary"
+              style="
+                background-color: #ffbd00;
+                color: white;
+                padding: 10px 20px;
+                border-radius: 5px;
+                border: none;
+              "
+              >Donate</a
+            >
           </div>
         </div>
       </div>
@@ -167,9 +203,21 @@
             alt="WhatsApp"
           />
         </a>
-        <i class="fa-brands fa-whatsapp"></i>
       </div>
       <p>&copy; 2025 Donatia. All Rights Reserved.</p>
     </footer>
+
+    <script>
+      ScrollReveal({
+          reset: true,
+          distance: '50px',
+          duration: 1200,
+          delay: 300,
+      });
+    
+      ScrollReveal().reveal('.tagline', { origin: 'top', delay: 200 });
+      ScrollReveal().reveal('.card', { delay: 400, origin: 'bottom' });
+      ScrollReveal().reveal('.footer', { origin: 'bottom', delay: 600 });
+    </script>
   </body>
 </html>
