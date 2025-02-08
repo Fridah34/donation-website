@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support</title>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <link rel="stylesheet" href="style.css">
+    <title>Admin-dashboard</title>
+    <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
 </head>
 <body>
     <header class="header">
         <div class="container">
             <nav class="navbar navbar-expand-lg">
-                <a class = "navbar-brand">DONATIA</a>
+                <a class = "navbar-brand" href="main.page.html">DONATIA</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -23,104 +25,93 @@
                         <li class=""nav-item><a class="nav-link" href="main.page.html">Home</a></li>
                         <li class=""nav-item><a class="nav-link" href="recognizeus.html">Recognize Us</a></li>
                         <li class=""nav-item><a class="nav-link" href="Support.html">Support</a></li>
-                        <li class=""nav-item><a class="nav-link" href="Events.html">Events</a></li>
+                        <li class=""nav-item><a class="nav-link" href="events.html">Events</a></li>
                         <li class=""nav-item><a class="nav-link" href="news.html">News</a></li>
                         <li class=""nav-item><a class="nav-link" href="contact.html">Contact</a></li>
                     </ul>
-                    <a class="donate-btn" href="donate.html">DONATE</a>
+                    <a class="donate-btn" href="support.html">DONATE</a>
                 </div>
             </nav>
         </div>
     </header>
-    <section class="support-section">
-        <h2>SUPPORT US</h2>
-        <div class="content">
-            <div class="text">
-                <h3>Volunteer</h3>
-                <p>
-                    Volunteering is at the heart of our mission. By joining our team, you’ll play a vital role in creating positive change in the lives of those in need. 
-                    Whether you’re helping with fundraising events, assisting in community outreach programs, or lending a hand in logistics, every effort counts.
-                     Your time and dedication bring hope to countless individuals, and together, we can build a better future. 
-                </p>
+
+    <div class="admin-container">
+        <h1>Admin Dashboard</h1>
+        
+        <div class="donation-overview">
+            <h2>Donation Overview</h2>
+            <div class="chart-container">
+                <canvas id="donationChart"></canvas>
+            </div>
+
+            <div class="summary-cards">
+                <div class="card mpesa-card">
+                    <h3>M-Pesa</h3>
+                    <p>KES 600,000</p>
+                </div>
+                <div class="card paypal-card">
+                    <h3>PayPal</h3>
+                    <p>KES 400,000</p>
+                </div>
+                <div class="card cards-card">
+                    <h3>Credit/Debit Cards</h3>
+                    <p>KES 585,000</p>
+                </div>
             </div>
         </div>
-        <div class="content">
-            <div class="text">
-                <h3>Fundraising</h3>
-                <p>
-                    Fundraising is a powerful way to support our mission and make a lasting impact in the community. 
-                    Whether you organize a charity event, launch an online campaign, or rally your friends and family to contribute, every effort helps bring hope to those in need.
-                     Your generosity fuels our programs, providing essential resources, education, and support to vulnerable individuals.
-                </p>
-            </div>
-        </div>
-    </section>
+    </div>  
     
-    <section class="donate-section">
-        <h2>WAYS YOU CAN DONATE</h2>
-        <div class="donate-options">
-            <div class="donate-box in-person">
-                <h3>In Person</h3>
-                <p>500 Terry Francine Street<br>San Francisco, CA 94158</p>
-            </div>
-            <div class="donate-box phone">
-                <h3>Over the Phone</h3>
-                <p>1-800-000-0000</p>
-            </div>
-            <div class="donate-box email">
-                <h3>By Email</h3>
-                <p>info@mysite.com</p>
-            </div>
+     <!-- Volunteers Table -->
+     <div class="teer mb-4">
+        <div class="teer-body">
+            <h5 class="teer-title">Volunteer Applications</h5>
+            <input type="txt" class="form-control mb-2" placeholder="Search volunteers...">
+            <table class="table table-striped">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>john@example.com</td>
+                        <td>Approved</td>
+                        <td class="action-cell">
+                            <div class="action-box">
+                                <button class="btn btn-success">Accept</button>
+                            </div>
+                        </td>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>jane@example.com</td>
+                        <td>Pending</td>
+                        <td class="action-cell">
+                            <div class="action-box">
+                                <button class="btn btn-success">Accept</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="btn btn-mary">Export to PDF</button>
+            <button class="btn btn-success">Export to Excel</button>
         </div>
-    </section>
-    <section>
-    <div class="donation-container">
-        <h2>DONATE ONLINE</h2>
-        <p class="donation-description">
-          This is your campaign description. It's a great place to tell visitors
-          what this campaign is about, connect with your donors, and draw attention
-          to your cause.
-        </p>
-    
-        <!-- Frequency Section -->
-        <div class="frequency-section">
-          <button class="frequency-btn active" id="oneTimeBtn">One time</button>
-          <button class="frequency-btn" id="monthlyBtn">Monthly</button>
-        </div>
-    
-        <!-- Amount Section -->
-        <div class="amount-section">
-          <button class="amount-btn">Ksh 100</button>
-          <button class="amount-btn">Ksh 200</button>
-          <button class="amount-btn">Ksh 500</button>
-          <button class="amount-btn">Ksh 1000</button>
-          <button class="amount-btn">Ksh 5000</button>
-          <input type="text" class="amount-input" placeholder="Other Amount" />
-        </div>
-    
-        <!-- Payment Method Section -->
-        <div class="payment-section">
-          <label for="paymentMethod">Payment Method</label>
-          <select id="paymentMethod" class="payment-select">
-            <option value="mpesa" selected>M-Pesa</option>
-            <option value="card">Credit/Debit Card</option>
-            <option value="paypal">PayPal</option>
-          </select>
-        </div>
-    
-        <!-- Donate Button -->
-        <div class="donate-button-section">
-          <button class="donate-btn">DONATE</button>
-        </div>
-      </div>
-    </section>
-    
+    </div>
+</div>
+
+
     <section class="policies">
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
                     <h3>CONTACT US</h3>
-                    <p>Caxton House<br>Nairobi, Koinange Street<br>donatia@gmail.com</p>
+                    <p>Caxton House, Koinange Street<br>Nairobi<br>donatia@gmail.com</p>
                 </div>
                 <div class="col-md-3">
                     <h3>CONNECT WITH US</h3>
@@ -148,6 +139,8 @@
     
     </section>
     
+    
+    
     <footer class="footer">
         <div class="social-icons">
             <a href="https://twitter.com/" target="_blank">
@@ -169,7 +162,7 @@
         </div>
         <p>&copy; 2025 Donatia. All Rights Reserved.</p>
     </footer>
-    
+    <script src="script2.js"></script>
     
 </body>
 </html>

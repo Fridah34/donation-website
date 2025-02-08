@@ -815,7 +815,7 @@ h2 {
 }
 
 .frequency-btn.active {
-  outline: 3px solid #4b2668; /* Purple outline for active state */
+  outline: 3px solid #4b2668; 
 }
 
 /* Amount Section: center the buttons horizontally */
@@ -960,3 +960,4 @@ h2 {
 .error {
   margin-bottom: 5px;
 }
+
