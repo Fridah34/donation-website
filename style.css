@@ -534,7 +534,11 @@ button:hover {
   margin-bottom: 15px;
 }
 .register-btn {
+<<<<<<< HEAD
+  background: #1a3d36;
+=======
   background: #ffbd00;
+>>>>>>> e4a021fa693c6c7091e9d87bdad3dd7df5616e08
   color: white;
   padding: 10px 20px;
   font-size: 14px;
@@ -545,10 +549,13 @@ button:hover {
   display: inline-block;
 }
 
+<<<<<<< HEAD
+=======
 .register-btn:hover {
   background: #ff0054;
 }
 
+>>>>>>> e4a021fa693c6c7091e9d87bdad3dd7df5616e08
 .news-content p {
   color: #ffffff;
 }
@@ -564,9 +571,12 @@ button:hover {
 .support-section {
   padding: 50px 20px;
   background-color: #ffffff;
+<<<<<<< HEAD
+=======
   text-align: center;
   position: relative;
   
+>>>>>>> e4a021fa693c6c7091e9d87bdad3dd7df5616e08
 }
 
 .support-section h2 {
@@ -576,6 +586,10 @@ button:hover {
   font-weight: bold;
   margin-bottom: 20px;
   text-align: center;
+<<<<<<< HEAD
+}
+
+.content {
   position: relative;  /* Keeps it above the background */
   z-index: 2;
   background: rgba(255, 255, 255, 0.85);  /* Light background for contrast */
@@ -590,6 +604,24 @@ button:hover {
   align-items: center;
   max-width: 900px;
   margin: auto;
+<<<<<<< HEAD
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.text {
+  text-align: left;
+  max-width: 500px;
+=======
   background: url('/Images/pd.jpeg') no-repeat center/cover;
   filter:blur(5px);
   padding:50px 20px;
@@ -620,6 +652,7 @@ button:hover {
   border-radius: 10px;
   max-width: 500px;
   
+
 }
 
 .text h3 {
