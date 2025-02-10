@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 labels: ['M-Pesa (KES)', 'PayPal (USD & KES)', 'Credit/Debit Cards (USD & KES)'],
                 datasets: [{
                     label: 'Donation Totals',
-                    data: [600000, 400000, 585000],
+                    data: [600000, 400000, 285000],
                     backgroundColor: [
                         '#ffbd00', 
                         '#ff0054', 

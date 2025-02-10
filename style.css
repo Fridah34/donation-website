@@ -184,7 +184,7 @@ body {
 }
 
 .policies {
-  background-color: #f4f4f4;
+  background-color: #b49696;
   padding: 40px 0;
 }
 .mission-area {
@@ -192,7 +192,7 @@ body {
 }
 
 .policies {
-  background-color: #f4f4f4;
+  background-color: #bbb8b8;
   padding: 40px 0;
 }
 
@@ -446,14 +446,13 @@ label {
 }
 
 .input-line {
-  /* Style for line inputs */
   width: 100%;
-  padding: 5px 0; /* Reduced vertical padding */
+  padding: 5px 0; 
   margin-bottom: 10px;
-  border: none; /* Remove default border */
-  border-bottom: 1px solid #ccc; /* Bottom border for the line */
-  background: transparent; /* Make background transparent */
-  outline: none; /* Remove outline on focus */
+  border: none; 
+  border-bottom: 1px solid #ccc; 
+  background: transparent; 
+  outline: none; 
   box-sizing: border-box;
 }
 
@@ -534,11 +533,8 @@ button:hover {
   margin-bottom: 15px;
 }
 .register-btn {
-<<<<<<< HEAD
   background: #1a3d36;
-=======
   background: #ffbd00;
->>>>>>> e4a021fa693c6c7091e9d87bdad3dd7df5616e08
   color: white;
   padding: 10px 20px;
   font-size: 14px;
@@ -549,13 +545,10 @@ button:hover {
   display: inline-block;
 }
 
-<<<<<<< HEAD
-=======
 .register-btn:hover {
   background: #ff0054;
 }
 
->>>>>>> e4a021fa693c6c7091e9d87bdad3dd7df5616e08
 .news-content p {
   color: #ffffff;
 }
@@ -565,34 +558,33 @@ button:hover {
 }
 
 .spacer {
-  height: 200px;
+  height: 100px;
 }
 
 .support-section {
   padding: 50px 20px;
   background-color: #ffffff;
-<<<<<<< HEAD
-=======
   text-align: center;
   position: relative;
   
->>>>>>> e4a021fa693c6c7091e9d87bdad3dd7df5616e08
 }
 
 .support-section h2 {
-  color: #9e0059;
+  color: #000000;
   font-size: 28px;
   text-transform: uppercase;
   font-weight: bold;
+  background-color:#000000 ;
   margin-bottom: 20px;
   text-align: center;
-<<<<<<< HEAD
 }
 
+
+
 .content {
-  position: relative;  /* Keeps it above the background */
+  position: relative;  
   z-index: 2;
-  background: rgba(255, 255, 255, 0.85);  /* Light background for contrast */
+  background: rgba(255, 255, 255, 0.85);  
   display: inline-block;
   padding: 5px 10px;
   border-radius: 5px;
@@ -833,7 +825,7 @@ h2 {
 }
 
 .frequency-btn {
-  background-color: #ffc107; /* Yellow */
+  background-color: #ffc107;
   color: #000;
   border: none;
   padding: 10px 20px;
@@ -861,7 +853,7 @@ h2 {
 }
 
 .amount-btn {
-  background-color: #ffc107; /* Yellow */
+  background-color: #ffc107; 
   color: #000;
   border: none;
   padding: 10px 20px;
@@ -913,7 +905,7 @@ h2 {
   max-width: 600px;
   margin: 50px auto;
   padding: 20px;
-  background-color: #ffffff;
+  background-color: beige;;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border: 2px solid #9e0059; 
